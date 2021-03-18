@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+
+ body{
+ 	margin:0;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 400;
+ }
+
+ *{
+ 	box-sizing: border-box;
+ }
+
+ .container{
+ 	max-width: 1170px;
+ 	width: 100%;
+ 	margin:auto;
+ }
+
+ .home{
+ 	height: 100vh;
+ 	background-image: url("images/bg.jpg");
+ 	background-size: cover;
+ 	background-position: center;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	padding:50px 15px;
+ 	position: relative;
+ }
+ .home::before{
+ 	content: '';
+ 	position: absolute;
+ 	left:0;
+ 	top:0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: rgba(0,0,0,0.8);
+ 	z-index: 1;
+ }
+
+ .home .home-text{
+ 	text-align: center;
+ 	position: relative;
+ 	z-index: 2;
+ }
+
+.home .home-text h1{
+	color:#ffffff;
+	font-size: 50px;
+	color:#ffffff;
+	line-height: 56px;
+	font-weight: 700;
+	margin:0 0 20px;
+}
+.home .home-text p{
+	margin:0;
+	overflow: hidden;
+}
+.home .home-text p span{
+    font-size: 40px;
+    color:#ff2c45;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 46px;
+    display: none;
+}
+
+.home .home-text p span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.home .home-text p span.text-out{
+	animation: textOut .5s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+
+
+
+
+
+
+
